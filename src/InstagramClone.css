@@ -1,0 +1,414 @@
+/* Shared Gradient Background */
+body {
+    background: linear-gradient(135deg, #231942, #5E548E, #9F86C0, #BE95C4, #E0B1CB);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #ffffff;
+    font-family: 'Arial', 'Verdana', sans-serif; 
+    font-size: 10px;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #231942;
+    color: #ffffff;
+}
+
+/* Login Container */
+.login-container {
+    margin-top: 10%;
+    font-family: 'Arial', 'Verdana', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.login-form {
+    background: rgba(35, 25, 66, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h3 {
+    font-weight: Verdana;
+}
+
+.login-form a {
+    color: #E0B1CB;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard-container {
+    min-height: 100vh;
+}
+
+.content-section {
+    padding: 20px;
+}
+
+/* Button Styles */
+.custom-btn {
+    background-color: #BE95C4;
+    border: none;
+}
+
+.custom-btn:hover {
+    background-color: #9F86C0;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navbar Branding */
+.navbar-custom .navbar-brand {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #E0B1CB;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Dashboard Feed Styles */
+.feed {
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.card-body {
+    font-size: 14px;
+}
+
+.form-control {
+    border-radius: 50px;
+}
+
+/* Stories Section */
+.stories {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .story {
+    margin-right: 15px;
+    text-align: center;
+  }
+  
+  .story-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  /* Post Feed */
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    font-weight: bold;
+  }
+  
+  .card-body {
+    font-size: 14px;
+  }
+  
+  .form-control {
+    border-radius: 50px;
+  }
+  
+  /* Bottom Navbar */
+  .bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #231942;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .bottom-navbar button {
+    color: white;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bottom-navbar button:hover {
+    text-decoration: underline;
+  }
+  
+  /* General Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Ensure consistency with login page */
+  background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #007bff !important;
+  font-weight: bold;
+}
+
+/* Main layout grid */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stories {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  padding: 10px;
+  border-bottom: 1px solid #ddd; 
+  margin-bottom: 20px; /* Space below the stories */
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80px; /* Keep a fixed width */
+  cursor: pointer; /* effect for interactivity */
+}
+
+.story-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Make it circular */
+  border: 2px solid #ddd; 
+}
+
+.story span {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* Feed */
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-img-top {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Suggestions */
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.suggestions .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.suggestions img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Add Story Button */
+.add-story-btn {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+
+/* Welcome Section */
+h4 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: #f8f9fa;
+}
+
+.card-img {
+  border-radius: 0;
+}
+
+/* Like and Share Buttons */
+button {
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button .fa-camera,
+button .fa-share {
+  margin-right: 8px;
+}
+
+/* Custom Styles for Like Button */
+button .fa-camera {
+  color: #007bff;
+}
+
+button .fa-share {
+  color: #28a745;
+}
+
+button:active .fa-camera,
+button:active .fa-share {
+  color: #0056b3;
+}
+
+/* Comments Section */
+.comments {
+  margin-top: 10px;
+}
+
+.comments p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Story Modal */
+.modal-body img {
+  width: 100%;
+  height: auto;
+}
+
+/* Bottom Navbar */
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-navbar button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.bottom-navbar button:hover {
+  color: #007bff;
+}
+
+/* Adjustments for Modal */
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+}
+/* Style for the add story button */
+.add-story-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 12px;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  margin-right: 10px;
+}
+
+.add-story-btn:hover {
+  background-color: #007bb5;
+}
+
+.story-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+}
+
+.story {
+  text-align: center;
+  margin: 10px;
+}
+
